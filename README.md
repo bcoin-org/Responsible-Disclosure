@@ -1,111 +1,19 @@
 This is a fork of the Responsible Disclosure document outlined here: https://github.com/RD-Crypto-Spec/Responsible-Disclosure
 
-bcoin intends to follow this specification. An addedum with details specific to the project, such as contact info & bounty details, can be found at the end of this document.
+bcoin intends to follow this policy for any security related disclosures. See our project-specific addendum below for contact details and information on bug bounty programs.
 
-# A Standard for Responsible Disclosure in Cryptocurrency and Related Software
-
-## Background
-Cryptocurrencies represent a radical shift from the legacy financial system and as a result provide an opportunity to help reshape the finance world. It is essential to recall that cryptocurrencies represent real money and introducing bugs and security vulnerabilities can cost users a significant amount of money, but ultimately hurt all other participants in the space.
-
-There are several open source projects with common code, with shared goals of expansion in capability and investment, driven by market confidence in their integrity, that would benefit from a safe and well-defined vulnerability sharing processes.
-
-For this reason, we have formalized a Responsible Disclosure policy that sets a standard for how organizations can share vulnerability information ethically, responsibly and for the good of the ecosystem.
-
-## Guiding Principles
-- We recognize that prior to mainstream adoption of cryptocurrencies, the safety and associated growth of the ecosystem of technologies is more important than competition within the space, at least when considering security vulnerability information.
-- We recognize that universal adoption of basic security responses to disclosures is vital to the prosperity of the ecosystem and by extension every member of it.
-- We recognize that this standard must reflect and respect the complexities of the crypto ecosystem and provide the opportunity for organizations to adhere to their own values and working practices beyond this basic standard.
-
-## Purpose
-This standard is intended to set the expectations and limitations of the disclosure process and each party’s participation in it, to reduce the effort and confusion involved in disclosing vulnerabilities, and to encourage participation in vital security practices for the benefit of all participants.
-
-## The Standard
-To adhere to this standard, your organization will need to publish a document describing your disclosure process and follow the basic practices involved. This document is a suggested starting point. Publishing can be achieved using GitHub, but wherever it is published it should be possible to link directly to it with a static url so that it can be linked by other participating organizations. 
-
-### Ethical Behavior
-Responsible disclosure is predicated on ethical behavior. These guidelines outline best practices for the community as whole, whether you are reporting, or the recipient of a report. By stating that you adhere to this policy, you’re claiming to handle vulnerability information ethically, and abide by the following:
-
-- Do not attempt to leverage a vulnerability, or information of its existence, as part of a financial trading strategy.
-- Do not attempt to compromise systems upon which development of a product relies; including but not limited to compromising development systems, accounts, domains, email etc..
-- Do not attempt to sell vulnerabilities.
-- Do not ask for any form of compensation from an affected party.
-- You may compensate a disclosing party if you would like to after all known vulnerability details have been disclosed.
-- Do not disclose a bug or vulnerability on mailing lists, public boards, forums, social media or any other channel prior to Responsibly Disclosing to the organizations you have a published relationship with
-- Do not attempt any illegal acts, including phishing, physical attacks, DDoS, or any attempt to gain access without authorization
-
-### Publicly Committing to Disclosure Process
-To commit to this standard it requires that your published disclosure process include an addendum section that outlines policies specific to your project.
-
-1. Your preferred contact method (eg. email to this address)
-2. How to use that contact method securely (eg. full public key)
-3. Details of any bug bounty program if you have one, and what it does or does not cover (you can link to another single page that contains these details).
-4. Your list of neighboring projects who you will disclose to if you find an issue or if an issue is disclosed to you that might affect their products too.
-5. A link to this standard.
-6. The date that your commitment was last updated.
-
-### Publicly Committing to Disclosure Relationships
-To provide ecosystem cohesion and the expectation of cooperation and timely delivery of vulnerability information, each participating organization will publicly commit to making disclosures that may affect related projects (‘neighbors’). This does not limit any participating organization from responsibly disclosing to other organizations, provided that they follow the other provisions and restrictions of this standard when doing so.
-
-Committing to disclosure relationships serves the purpose of setting the expectation of sharing by proxy to those parties should it be likely they are also affected by a disclosed bug. The intention is that all affected parties will collaborate on fixes, release updates together, then release vulnerability details together in concert with the original disclosing party.
-
-### Standard Disclosure Timelines
-Some vulnerabilities take more time to fix than others, and some organizations are able to switch tasks to fixes faster than others, and this ability tends to fluctuate over time.
-
-### Initial Contact
-To disclose to a neighbor that you have an existing relationship with, you must contact them via their published contact details using the security procedures that they have published. If you get no response within two working days, you must try another two times with an interval of two working days each time. If you get no acknowledgement to those messages, you may optionally decide to attempt to reach them using other methods, but you must not include details of the vulnerability unless you are using their approved secure communication method.
-
-If there is no response after your initial contact attempts, you should send another message saying that there has been no response to your (at least three) messages and setting a date for public disclosure that is not less than 90 days in the future and not more than sixty days. If you receive a response during that time, both parties can agree to change the disclosure date in accordance with the rest of this process.
-
-### Giving Details
-After you receive a response to your initial contact, you should disclose the details of the vulnerability to the potentially affected party, along with reasons you think they may be affected and any advice you have on how to fix the issue.
-Once you have made initial contact, you are expected to provide all the technical details about the vulnerability within two working days of receiving acknowledgement of your initial contact.
-
-Your report should include:
-- A PGP encrypted email to maintainers
-- Description of suspected vulnerability
-- Steps to reproduce the issue
-- Your email address and a secure mechanism to contact you
-- Your name and/or colleagues if you wish to be later recognized
-- Optionally a patch and/or suggestions to resolve the vulnerability
-
-### Setting Dates
-After you have provided details of the issue to your neighbors, you both should agree on a date to release updates and a date to publicize the details of the issue. Issues that require only a small change should correspond with a date relatively soon after giving details - somewhere between 30 and 60 days. Issues that require a more significant investment by both parties might result in a date set up to 90 days in the future.
-
-Parties involved in the disclosure should have the expectation of negotiating publishing dates with all of their neighbors that share the affected code, even if it turns out that those neighbors are not vulnerable for some other reason not known at the time.
-
-It is up to each organization to determine their level of vulnerability to any disclosed issue, and rate issues accordingly. In general though, spend bugs should be considered very high priority - users losing access to their funds is precisely what this standard is intended to address.
-
-It is up to each organization to notify their users of the availability of a fix and migrate their user base to the fixed version.
-
-### Coordinated Release
-When executed faithfully, the intention of this standard is to have all affected parties release a fix for an issue to their users together, and then all release details of the vulnerability together after a period of time that everyone can agree on.
-
-In practice this is not always possible, and sometimes it will be necessary to release when one or more parties are not ready. Without the threat of public release of vulnerability information, organizations aren’t always incentivized to act in good faith for the security of their users.
-
-Once the dates are set, the clock is very much ticking: When the release date comes around, any and all participating parties should release the vulnerability information regardless of the availability of fixes and the adoption rate of their user base.
-
-Responding with appropriate development resources to fix security bugs, implementing a user contact system, and an update system that can perform in this time-limited scenario is down to each participating organization.
-
-At time of release, participants should make a reasonable effort to discreetly patch. Avoid language that can draw undue attention to commits & PRs, or consider embedding the fix among other updates.
-
-### Bounty Payments
-Parties that have been disclosed to may, at their discretion, decide to pay a bounty to a disclosing party, but within the limits of their existing relationship (in the case of a neighbor), or their published bug bounty program (in the case of anyone else). Organizations implementing this standard may not attempt to coerce payments or sell bugs (see the section on “Ethical Behavior”). 
-
-### Acknowledgements
-If the reporting individual or organization would like to be recognized for their discovery, they may do so after the disclosure timeout. At the discretion of each participating team, a list of these individuals and/or organizations may recognize vulnerabilities disclosed responsibly.
-
-# bcoin addendum
+# bcoin Addendum: Disclosing vulnerabilities to the bcoin team
 ## Acknowledgements
-Should you responsibly disclose a bug to the bcoin team, and would like acknowledgement, we'd be happy to accomodate.
+Should you wish to responsibly disclose a bug to the bcoin team, and would like acknowledgement, we'd be happy to accomodate.
 
 ## Bounties
-bcoin offers no bounty program at this time. check back soon for an update.
+bcoin offers no bounty program at this time. Check back soon for an update.
 
 ## Contact Info
 ```
 Project Maintainer
 Steven Bower
-steven @ purse . io
+steven [at] purse [dot] io
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 mQINBFtaZFYBEACjAGvnypD9REKOkO9cKEQcBd1LSU8Lm31ErRYQntapARPJ2uCs
@@ -243,11 +151,94 @@ nGCw5K8FJbas0Ppbm627FDTrPs7uMWtRmQGQUJbez66WMHzbbrlX5YucSbgKWee2
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+```
+Node Chkuaselidze
+Project Maintainer
+nodar [at] purse [dot] io
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQENBFkQppYBCACbD10le/rMwk0Flha+fedfZj6KN8y8H3/8DvYh2n2ugPUuCLf8
+jmsrZKuMA01VovhdwOZQxE9+aehZIxVcrLqij03M1FQ5LP9Ff6icAot8YP/g0cff
+kY61JEDp/FcZgdaDqtGQw6Kb9dErmHEeU5422a0BqRV8iUt2nXQKpC6h7Qi97nUk
+n5ppuk5JjZ6UYegqb4T7uFsGaMmyJ0U4AhDQIz3g4r2H7C7cLY38Cw6c4max1ckk
+8g7QYUgVDLLFjXtmPmOgpG/TmmDuNtMxbbvBdsPjqGsm6yonmsgLsjM1cEIIj3ve
+enyC2krcmFu4IerRNaH1uGEiCXv0yi631OjbABEBAAG0ME5vZGUgQ2hrdWFzZWxp
+ZHplIDxub2Rhci5jaGt1YXNlbGlkemVAZ21haWwuY29tPokBVAQTAQgAPhYhBGgq
+DhStskaKwamdXY4bTcKQQL2QBQJZEKaWAhsDBQkDwmcABQsJCAcCBhUICQoLAgQW
+AgMBAh4BAheAAAoJEI4bTcKQQL2QDVUH/3CPdPHTX3T57x7COJoUblv0u5tcX8OO
+jwFJgQVRDgpaculiVT3yjiyicntQiictt+2bvUuxKF6xqXb3lv/8sbrlMGod0Y9u
+ZgBgAFvRlFipMK1l71RCkyvjQR/tWy7Tf7VGpmfxeer4B47EaouHBj2SXqpgu4VI
+++/X9YCqsO0ZLG/TJDbqSPG74j+Ut0AAbLUstw1xfgrBWoLjrIOmbB+ZwSXPJOWe
+m3Vr7GPQD/ySx+YvLYN2Wf1O6LLQTAt6kkOTV1I9pVg01Fj451EpkAd3QqXQvr88
+erWJGSvyAyKMf2VqjpRODkTi4zLqigdSnoHzOViS5Lx+AXpxkUTp6jG5AQ0EWRCm
+lgEIAMD0lx8+y/xJ48DjCl4Kt+Gs0zqu8VRzkSVrlqW11Qbhn31Q9hp36eX4WLZK
+Lclo019IlzyEZIT6NK7FdywbxyEL+Av1mYIyUHxyks9M7ibpGrcZAUCnXXbANHQR
+aNl7FX2JW96Fzk2aYO8olCS++C6tfKVPNjcY3wH7PRLeJoqZeLU7c5eFFb3cc7Uz
+Ldj8uOXm3zYtAUnMD0/5STmY+YFw6DsFIlQspVwR2hY/2ceWGF+8q47a6/A/ifS4
+PlyCwWZM99u++13xXK7SQrXf4sIq4rTzfT6EV/Ve8MXZH/5sUlX0d9vdMji1eW1F
+frP0RVrgIUsaYB6kWl9A0xgKMGsAEQEAAYkBPAQYAQgAJhYhBGgqDhStskaKwamd
+XY4bTcKQQL2QBQJZEKaWAhsMBQkDwmcAAAoJEI4bTcKQQL2Qht0H/2rtkuNkSM/6
+YbpBb8grNVfiWtc+SKCGOYHMUCVdzMfuLiSDcYFxKuEOsw3US3deWrCyKfZQEu6a
+NJ5zP4kUkiuQO7GErqNDJL04rtWHsfVjlsSfNpI/k9WEh5eo7BJGVMA4gbUzBsbI
+9WnI9u1HjzZY+8JvHqvkkOneYrqsR1DM6j3N6OvrlKAW8dr0LH3AWHJv7RlFL5kI
+eTdJk1piMJO5wGQL/BTv6wswxw5h7AsoN2m4Kc11W7zoQiMsNgcMB25KViIRaNzW
+iTfgOyhb0CVM6S2N7B/vspJRb/I/5zbVwdqpWIHux+I+kcS0vkpH7lhLdWVzIpmS
+rKKJLZGEj1U=
+=ZxVA
+-----END PGP PUBLIC KEY BLOCK-----
+```
+
+```
+Javed Khan
+Project Maintainer
+javed [at] purse [dot] io
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: SKS 1.1.6
+Comment: Hostname: pgp.mit.edu
+
+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
+=Uc/I
+-----END PGP PUBLIC KEY BLOCK-----
+```
 
 ```
 Buck Perley
 Project Maintainer
-bucko @ purse . io
+buck [at] purse [dot] io
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: Keybase Go 1.0.44 (darwin)
@@ -315,6 +306,99 @@ Ar4NU+70aKF7tlZQ7ZEXLVviqfzVLsNB/1Dn79tXd04m/DyGmotIXvbXypSZ7aTk
 =058m
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+# A Standard for Responsible Disclosure in Cryptocurrency and Related Software
+
+## Background
+Cryptocurrencies represent a radical shift from the legacy financial system and as a result provide an opportunity to help reshape the finance world. It is essential to recall that cryptocurrencies represent real money and introducing bugs and security vulnerabilities can cost users a significant amount of money, but ultimately hurt all other participants in the space.
+
+There are several open source projects with common code, with shared goals of expansion in capability and investment, driven by market confidence in their integrity, that would benefit from a safe and well-defined vulnerability sharing processes.
+
+For this reason, we have formalized a Responsible Disclosure policy that sets a standard for how organizations can share vulnerability information ethically, responsibly and for the good of the ecosystem.
+
+## Guiding Principles
+- We recognize that prior to mainstream adoption of cryptocurrencies, the safety and associated growth of the ecosystem of technologies is more important than competition within the space, at least when considering security vulnerability information.
+- We recognize that universal adoption of basic security responses to disclosures is vital to the prosperity of the ecosystem and by extension every member of it.
+- We recognize that this standard must reflect and respect the complexities of the crypto ecosystem and provide the opportunity for organizations to adhere to their own values and working practices beyond this basic standard.
+
+## Purpose
+This standard is intended to set the expectations and limitations of the disclosure process and each party’s participation in it, to reduce the effort and confusion involved in disclosing vulnerabilities, and to encourage participation in vital security practices for the benefit of all participants.
+
+## The Standard
+To adhere to this standard, your organization will need to publish a document describing your disclosure process and follow the basic practices involved. This document is a suggested starting point. Publishing can be achieved using GitHub, but wherever it is published it should be possible to link directly to it with a static url so that it can be linked by other participating organizations. 
+
+### Ethical Behavior
+Responsible disclosure is predicated on ethical behavior. These guidelines outline best practices for the community as whole, whether you are reporting, or the recipient of a report. By stating that you adhere to this policy, you’re claiming to handle vulnerability information ethically, and abide by the following:
+
+- Do not attempt to leverage a vulnerability, or information of its existence, as part of a financial trading strategy.
+- Do not attempt to compromise systems upon which development of a product relies; including but not limited to compromising development systems, accounts, domains, email etc..
+- Do not attempt to sell vulnerabilities.
+- Do not ask for any form of compensation from an affected party.
+- You may compensate a disclosing party if you would like to after all known vulnerability details have been disclosed.
+- Do not disclose a bug or vulnerability on mailing lists, public boards, forums, social media or any other channel prior to Responsibly Disclosing to the organizations you have a published relationship with
+- Do not attempt any illegal acts, including phishing, physical attacks, DDoS, or any attempt to gain access without authorization
+
+### Publicly Committing to Disclosure Process
+To commit to this standard it requires that your published disclosure process include an addendum section that outlines policies specific to your project.
+
+1. Your preferred contact method (eg. email to this address)
+2. How to use that contact method securely (eg. full public key)
+3. Details of any bug bounty program if you have one, and what it does or does not cover (you can link to another single page that contains these details).
+4. Your list of neighboring projects who you will disclose to if you find an issue or if an issue is disclosed to you that might affect their products too.
+5. A link to this standard.
+6. The date that your commitment was last updated.
+
+### Publicly Committing to Disclosure Relationships
+To provide ecosystem cohesion and the expectation of cooperation and timely delivery of vulnerability information, each participating organization will publicly commit to making disclosures that may affect related projects (‘neighbors’). This does not limit any participating organization from responsibly disclosing to other organizations, provided that they follow the other provisions and restrictions of this standard when doing so.
+
+Committing to disclosure relationships serves the purpose of setting the expectation of sharing by proxy to those parties should it be likely they are also affected by a disclosed bug. The intention is that all affected parties will collaborate on fixes, release updates together, then release vulnerability details together in concert with the original disclosing party.
+
+### Standard Disclosure Timelines
+Some vulnerabilities take more time to fix than others, and some organizations are able to switch tasks to fixes faster than others, and this ability tends to fluctuate over time.
+
+### Initial Contact
+To disclose to a neighbor that you have an existing relationship with, you must contact them via their published contact details using the security procedures that they have published. If you get no response within two working days, you must try another two times with an interval of two working days each time. If you get no acknowledgement to those messages, you may optionally decide to attempt to reach them using other methods, but you must not include details of the vulnerability unless you are using their approved secure communication method.
+
+If there is no response after your initial contact attempts, you should send another message saying that there has been no response to your (at least three) messages and setting a date for public disclosure that is not less than 90 days in the future and not more than sixty days. If you receive a response during that time, both parties can agree to change the disclosure date in accordance with the rest of this process.
+
+### Giving Details
+After you receive a response to your initial contact, you should disclose the details of the vulnerability to the potentially affected party, along with reasons you think they may be affected and any advice you have on how to fix the issue.
+Once you have made initial contact, you are expected to provide all the technical details about the vulnerability within two working days of receiving acknowledgement of your initial contact.
+
+Your report should include:
+- A PGP encrypted email to maintainers
+- Description of suspected vulnerability
+- Steps to reproduce the issue
+- Your email address and a secure mechanism to contact you
+- Your name and/or colleagues if you wish to be later recognized
+- Optionally a patch and/or suggestions to resolve the vulnerability
+
+### Setting Dates
+After you have provided details of the issue to your neighbors, you both should agree on a date to release updates and a date to publicize the details of the issue. Issues that require only a small change should correspond with a date relatively soon after giving details - somewhere between 30 and 60 days. Issues that require a more significant investment by both parties might result in a date set up to 90 days in the future.
+
+Parties involved in the disclosure should have the expectation of negotiating publishing dates with all of their neighbors that share the affected code, even if it turns out that those neighbors are not vulnerable for some other reason not known at the time.
+
+It is up to each organization to determine their level of vulnerability to any disclosed issue, and rate issues accordingly. In general though, spend bugs should be considered very high priority - users losing access to their funds is precisely what this standard is intended to address.
+
+It is up to each organization to notify their users of the availability of a fix and migrate their user base to the fixed version.
+
+### Coordinated Release
+When executed faithfully, the intention of this standard is to have all affected parties release a fix for an issue to their users together, and then all release details of the vulnerability together after a period of time that everyone can agree on.
+
+In practice this is not always possible, and sometimes it will be necessary to release when one or more parties are not ready. Without the threat of public release of vulnerability information, organizations aren’t always incentivized to act in good faith for the security of their users.
+
+Once the dates are set, the clock is very much ticking: When the release date comes around, any and all participating parties should release the vulnerability information regardless of the availability of fixes and the adoption rate of their user base.
+
+Responding with appropriate development resources to fix security bugs, implementing a user contact system, and an update system that can perform in this time-limited scenario is down to each participating organization.
+
+At time of release, participants should make a reasonable effort to discreetly patch. Avoid language that can draw undue attention to commits & PRs, or consider embedding the fix among other updates.
+
+### Bounty Payments
+Parties that have been disclosed to may, at their discretion, decide to pay a bounty to a disclosing party, but within the limits of their existing relationship (in the case of a neighbor), or their published bug bounty program (in the case of anyone else). Organizations implementing this standard may not attempt to coerce payments or sell bugs (see the section on “Ethical Behavior”). 
+
+### Acknowledgements
+If the reporting individual or organization would like to be recognized for their discovery, they may do so after the disclosure timeout. At the discretion of each participating team, a list of these individuals and/or organizations may recognize vulnerabilities disclosed responsibly.
+
 
 Reference links:
 - https://medium.com/mit-media-lab-digital-currency-initiative/reducing-the-risk-of-catastrophic-cryptocurrency-bugs-dcdd493c7569 
