@@ -1,7 +1,8 @@
-# A Standard for Responsible Disclosure in Cryptocurrency and Related Software
-This is a fork of Responsible Disclosure document outlined here: https://github.com/RD-Crypto-Spec/Responsible-Disclosure
+This is a fork of the Responsible Disclosure document outlined here: https://github.com/RD-Crypto-Spec/Responsible-Disclosure
 
 bcoin intends to follow this specification. An addedum with details specific to the project, such as contact info & bounty details, can be found at the end of this document.
+
+# A Standard for Responsible Disclosure in Cryptocurrency and Related Software
 
 ## Background
 Cryptocurrencies represent a radical shift from the legacy financial system and as a result provide an opportunity to help reshape the finance world. It is essential to recall that cryptocurrencies represent real money and introducing bugs and security vulnerabilities can cost users a significant amount of money, but ultimately hurt all other participants in the space.
@@ -101,41 +102,6 @@ Should you responsibly disclose a bug to the bcoin team, and would like acknowle
 bcoin offers no bounty program at this time. check back soon for an update.
 
 ## Contact Info
-```
-Lead Maintainer
-jj @ purse . io
------BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG v2
-
-mQENBFFPEEwBCACt4A3YR0QLEy5Mo40bqluqAbnQ4E3Gp/FG/xXrXra9/2BXxDjW
-ZaDXUI86jJXJ5ko5ZrMwb6u7qJZBXoogcgwgqvrhxorpmm7SLRw4VIRHn8E8D+yk
-5rJ+CexFREGeScWcu7+zuJ336ag7kFzaWcc9BFUFXooIAzUUVWKLB28DnX+fbt02
-eBz2YxPpmdKnE33einvpiQulYejAA2ZdTyXN7Z39jgwWbehv9pwxNclUYtGSvicE
-aiCTS/g0x9jZigK3cS7MqfU7SEDOVIM+NHNUje7E1HokY3T0+s3uy9cJwft+QOvK
-MjlzzBlV4ncqxH2MVBeeefx4uUFubq3aopFDABEBAAG0KkNocmlzdG9waGVyIEpl
-ZmZyZXkgPGNoamplZmZyZXlAZ21haWwuY29tPokBOAQTAQIAIgUCUU8QTAIbAwYL
-CQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQiWKrneZma73/Uwf/Qb4t67yAvSHb
-ZWzoQyFu4tYJLTNRV7kJW09kP+XULnEspgJn8u/Y7AMTt3KylmNizLQwrWxzqMQD
-/kv1WkPopYfbztzfOgEPgxSM347ZYyouCLArwlqhJleOzjDkJYy4hwnY7tf3Axbj
-uAoaXnmJ/IqIsluzbHtN9pjdioEGoWQkS+V39fzC0cGZpCoypbcgPM7HKrlR41Ok
-MDfApGu2IdmRa9zj09bfPwcYOR1wTxL0VzdbOTUAxHKfdlhYmdj/FZrPJGbhGelQ
-gk/PrZkBsyMrtuJ2nmJDGsLe4MP+ufijzowN4R25Dw01vYjWjfEPe/oRElmizuzA
-LZcPKuTHErkBDQRRTxBMAQgA/KcvlYqRehiEMq3HyOmaZrVT0NK1uTg9bFVj6srQ
-DpnR77uL4i2GLF+Nmu9Wg3L1zrOjwOBNAZ/OSCLnFkrsG2QYjgdSvpHOrPVkoLqh
-8XtzFLVhnpz79Q6UChDNvTSs4hemfb2GCloDF+CulU8I98KK1+En6KJ8ppwGdno5
-bhHhs09irdxrJUGblS63jKqirFkH0P9BEpjNnroVPUtqV1Dr57ik9XkSD6wR82SW
-VlWgJvzO1bS/GnymakbtCx+VfdnB7Nx44bgnqgjtK1/vD7Dl2xacTiem7G/8+Zr+
-/MBVANL+RlzhKtIZ5dGn+NkZff2otF6OBGVHgCuXzSOgTwARAQABiQEfBBgBAgAJ
-BQJRTxBMAhsMAAoJEIliq53mZmu9XmcIAKAEofa7v+b8nHH+lDMuPMi9jFtrLTwf
-JE4KkcTrDPdDdKOgUCjB3nELgXY4ghPo1564ACAMiZrzBOdxFIcLI8NPwj2Ifn0L
-E6f82ea+sMcuRDRRz/jGq7oK5x9br+Q6QMWnbjcBEOtkRtrz5dcxVOytY/CC/JJ3
-ZBjg9Fq6DsC6bk+8DknY9H1HG7O0OAmifeklePCGXE2BifO0TGsK4/yVvUQ6GhXw
-sbHgKZvRKuGZc7i0yTIJnXjg3O63yy08dJYxDBNCAiufFLgv/BxB6hRb1mvJAlBP
-r+qJzzEj5Q0gZlgwARbCztpFcOi9yNnriJ5FZ6BjXLBrj87cwSq3wzM=
-=EUHU
------END PGP PUBLIC KEY BLOCK-----
-```
-
 ```
 Project Maintainer
 Steven Bower
@@ -350,74 +316,17 @@ Ar4NU+70aKF7tlZQ7ZEXLVviqfzVLsNB/1Dn79tXd04m/DyGmotIXvbXypSZ7aTk
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-```
-Braydon Fuller
-Project Maintainer
-braydon @ purse . io
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-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
-e7BqfFjOTUZMsAsyzLaJ
-=ennq
------END PGP PUBLIC KEY BLOCK-----
-```
-
 Reference links:
-https://medium.com/mit-media-lab-digital-currency-initiative/reducing-the-risk-of-catastrophic-cryptocurrency-bugs-dcdd493c7569 
-https://medium.com/mit-media-lab-digital-currency-initiative/http-coryfields-com-cash-48a99b85aad4 
-https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/015036.html 
-http://bitcoincore.org/en/contact 
-https://lists.linuxfoundation.org/pipermail/bitcoin-dev/ 
-https://www.reddit.com/r/btc/comments/6zf1qo/peter_todd_
-https://www.reddit.com/r/btc/comments/6z827o/chris_jeffrey_
-https://www.reddit.com/r/btc/comments/6zb3lp/maxwell_
-https://lists.linuxfoundation.org/pipermail/bitcoin-dev/
-http://luke.dashjr.org/programs/bitcoin/files/charts/branches.html
+- https://medium.com/mit-media-lab-digital-currency-initiative/reducing-the-risk-of-catastrophic-cryptocurrency-bugs-dcdd493c7569 
+- https://medium.com/mit-media-lab-digital-currency-initiative/http-coryfields-com-cash-48a99b85aad4 
+- https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/015036.html 
+- http://bitcoincore.org/en/contact 
+- https://lists.linuxfoundation.org/pipermail/bitcoin-dev/ 
+- https://www.reddit.com/r/btc/comments/6zf1qo/peter_todd_
+- https://www.reddit.com/r/btc/comments/6z827o/chris_jeffrey_
+- https://www.reddit.com/r/btc/comments/6zb3lp/maxwell_
+- https://lists.linuxfoundation.org/pipermail/bitcoin-dev/
+- http://luke.dashjr.org/programs/bitcoin/files/charts/branches.html
 
 
 
